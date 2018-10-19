@@ -1,0 +1,50 @@
+@import '../libColors.scss';
+
+@mixin transition($x...) {
+	-webkit-transition: $x;
+	-moz-transition: $x;
+	-ms-transition: $x;
+	-o-transition: $x;
+	transition: $x;
+}
+.textFieldContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 0.3;
+	margin: 0.4em 0 0 0;
+	.textField {
+		display: flex;
+		border-radius: 5%;
+		padding: 0.9em;
+		margin: 0 0 0.5em 0;
+		background-color: $textfield-inactive-background;
+		border: 0.17em solid $textfield-inactive-border;
+
+		@include transition(border 0.2s, background-color 0.4s);
+	}
+	.focused {
+		border: 0.17em solid $textfield-focused-border;
+		background-color: $textfield-focused-background;
+	}
+	.invalid {
+		border: 0.17em solid $textfield-validation-error;
+	}
+	.label {
+		align-self: flex-start;
+		color: $label-text-color;
+	}
+	.validationErrorContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 1.8em;
+		.validationError {
+			color: $textfield-validation-error;
+			font-size: 12px;
+			word-break: break-all;
+		}
+	}
+}

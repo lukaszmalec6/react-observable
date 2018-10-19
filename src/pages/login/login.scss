@@ -1,0 +1,15 @@
+@import '../../colors.scss';
+.loginContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.registerLink {
+		color: $link-text;
+		font-size: 13px;
+		&:hover {
+			color: $link-text-hover;
+			text-decoration: none;
+		}
+	}
+}

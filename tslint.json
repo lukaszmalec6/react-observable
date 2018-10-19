@@ -1,0 +1,16 @@
+{
+    "allowJs": true,
+    "jsRules": {
+        "no-empty": true
+    },
+    "rules": {
+        "extends": [
+            "tslint:recommended"
+        ],
+        "no-trailing-whitespace": [true, "ignore-comments"],
+        "interface-name": [true, "always-prefix"],
+        "no-unused-variable": true,
+        "quotemark": [true, "single"],
+        "semicolon": [true, "always"]
+    }
+}

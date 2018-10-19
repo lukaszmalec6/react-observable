@@ -1,0 +1,23 @@
+{
+    "login": {
+        "token": "zxcvbn"
+    },
+    "user": {
+        "email": "jane@doe.com",
+        "username": "JaneDoe68",
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "birthDate": "1994-01-01",
+        "phoneNumber": "0777 12 32 33",
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/women/17.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/women/17.jpg",
+            "thumbnail":
+                "https://randomuser.me/api/portraits/thumb/women/17.jpg"
+        },
+        "location": {
+            "conutry": "Japan",
+            "city": "Tokyo"
+        }
+    }
+}
